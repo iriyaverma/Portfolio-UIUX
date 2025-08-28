@@ -811,6 +811,13 @@ body {
     backdrop-filter: blur(10px);
 }
 
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(248, 187, 217, 0.15);
+    border-color: var(--primary-pink);
+    text-decoration: none;
+}
+
 .magic-active .project-card:hover {
     transform: translateY(-8px);
     box-shadow: var(--shadow-hover);
@@ -854,6 +861,7 @@ body {
     color: var(--text-medium);
     font-size: 0.95rem;
 }
+
 
 /* Publications Section */
 .publication-card {
