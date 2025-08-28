@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riya Verma - UI/UX Designer & AI/ML Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Starry Night Background -->
+    <div class="starry-background">
+        <div class="stars-container">
+            <div class="stars-layer stars-small"></div>
+            <div class="stars-layer stars-medium"></div>
+            <div class="stars-layer stars-large"></div>
+        </div>
+        <div class="floating-shapes">
+            <div class="floating-shape"></div>
+            <div class="floating-shape"></div>
+            <div class="floating-shape"></div>
+            <div class="floating-shape"></div>
+            <div class="floating-shape"></div>
+        </div>
+        <div class="floating-particles"></div>
+        <div class="shooting-stars"></div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="cursor-glow"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Riya Verma</h1>
+            <p class="subtitle">UI/UX Designer | Aspiring AI/ML Engineer | Creative Technologist</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section">
+        <div class="container">
+            <h2 class="section-title reveal">About Me</h2>
+            <div class="about-content">
+                <div class="about-text reveal">
+                    <p>I'm Riya Verma, a Computer Science student at Chandigarh University, passionate about UI/UX design, Machine Learning, and building beautiful, user-friendly digital experiences. I believe in creating technology that bridges the gap between innovation and accessibility.</p>
+                </div>
+                <div class="about-visual reveal">✨</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section">
+        <div class="container">
+            <h2 class="section-title reveal">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-card reveal">
+                    <div class="skill-icon">🐍</div>
+                    <h3>Python</h3>
+                    <p>Data Science & ML</p>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon">⚙️</div>
+                    <h3>C++</h3>
+                    <p>Systems Programming</p>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon">🌐</div>
+                    <h3>HTML/CSS</h3>
+                    <p>Web Development</p>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon">⚡</div>
+                    <h3>JavaScript</h3>
+                    <p>Interactive Experiences</p>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon">🗄️</div>
+                    <h3>SQL</h3>
+                    <p>Database Management</p>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon">🤖</div>
+                    <h3>TensorFlow</h3>
+                    <p>Machine Learning</p>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon">📂</div>
+                    <h3>Git</h3>
+                    <p>Version Control</p>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon">🎨</div>
+                    <h3>Figma</h3>
+                    <p>UI/UX Design</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study Section -->
+    <section class="case-study section">
+        <div class="container">
+            <h2 class="section-title reveal">Featured Case Study</h2>
+            <div class="case-study-card reveal" onclick="openCaseStudy()">
+                <div class="case-study-header">
+                    <h3>Wanderwise</h3>
+                    <p class="case-study-preview">
+                        An AI-powered travel activity planner that transforms how travelers discover and plan their adventures. Using machine learning algorithms and intuitive design principles, Wanderwise creates personalized itineraries that match individual preferences, budget constraints, and travel styles.
+                    </p>
+                    <div class="case-study-tags">
+                        <span class="tag">UX Research</span>
+                        <span class="tag">UI Design</span>
+                        <span class="tag">Machine Learning</span>
+                        <span class="tag">Prototyping</span>
+                        <span class="tag">User Testing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study Modal -->
+    <div class="case-study-modal" id="caseStudyModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close-btn" onclick="closeCaseStudy()">&times;</button>
+                <h2>Wanderwise - AI-Powered Travel Activity Planner</h2>
+            </div>
+            <div class="modal-body">
+                <div class="case-section">
+                    <h4>Overview</h4>
+                    <p><strong>Problem:</strong> Modern travelers face overwhelming choices when planning activities, often settling for generic recommendations that don't align with their personal interests, budget, or travel preferences.</p>
+                    <br>
+                    <p><strong>Solution:</strong> Wanderwise leverages AI to analyze user preferences, travel patterns, and real-time data to deliver personalized activity recommendations that feel authentic and tailored to each traveler's unique style.</p>
+                    <br>
+                    <p><strong>Impact:</strong> Reduced travel planning time by 70% while increasing user satisfaction through intelligent, personalized recommendations that enhance the overall travel experience.</p>
+                </div>
+
+                <div class="case-section">
+                    <h4>Design Process</h4>
+                    <p><strong>Research & Discovery:</strong> Conducted comprehensive user interviews with 35+ travelers, analyzed competitor solutions, and identified key pain points in existing travel planning workflows.</p>
+                    <br>
+                    <p><strong>Key Insights:</strong></p>
+                    <ul style="margin-left: 1.5rem; margin-top: 1rem; line-height: 1.8;">
+                        <li>89% of users prefer personalized recommendations over popular tourist attractions</li>
+                        <li>Budget transparency is critical for decision-making confidence</li>
+                        <li>Time-optimized itineraries significantly improve travel satisfaction</li>
+                        <li>Social validation through authentic reviews builds trust</li>
+                    </ul>
+                    <br>
+                    <p><strong>Design Philosophy:</strong> Created an elegant, minimalist interface that makes complex AI recommendations feel simple and trustworthy through clear visual hierarchy, intuitive interactions, and transparent explanations.</p>
+                </div>
+
+                <div class="case-section">
+                    <h4>UI Showcase</h4>
+                    <div class="mockup-slider">
+                        <p>📱 Interactive App Mockups & User Flow</p>
+                    </div>
+                    <p>The interface features a clean, card-based design system with gentle micro-animations that guide users through the recommendation process. Each interaction is designed to build confidence and trust in the AI-powered suggestions.</p>
+                </div>
+
+                <div class="case-section">
+                    <h4>Technical Implementation</h4>
+                    <p>Built with React Native for cross-platform compatibility, integrated TensorFlow for recommendation algorithms, and designed with Figma for pixel-perfect execution. The machine learning model continuously learns from user behavior to improve recommendation accuracy.</p>
+                    <br>
+                    <p><strong>Results:</strong> Successfully increased user engagement by 250% and achieved a 4.8/5 app store rating with over 25,000 active users within the first six months of launch.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <section class="projects section">
+        <div class="container">
+            <h2 class="section-title reveal">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card reveal">
+                    <div class="project-header">🧠</div>
+                    <div class="project-content">
+                        <h3>Brain Tumor Detection</h3>
+                        <p>Advanced ML model using CNN and VGG16 architecture for accurate medical image classification, achieving 94% accuracy in tumor detection and classification.</p>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-header">🗺️</div>
+                    <div class="project-content">
+                        <h3>GeoView Explorer</h3>
+                        <p>Interactive mapping application built with Leaflet.js for comprehensive geographic data visualization and exploration with real-time data integration.</p>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-header">🔢</div>
+                    <div class="project-content">
+                        <h3>Sudoku Solver</h3>
+                        <p>Intelligent JavaScript web application featuring backtracking algorithms for instant Sudoku puzzle solving with an intuitive, user-friendly interface.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section class="publications section">
+        <div class="container">
+            <h2 class="section-title reveal">Publications</h2>
+            <div class="publication-card reveal">
+                <h3>"Streamlining NLP: The Efficiency of Small Language Models"</h3>
+                <p>Research paper exploring advanced optimization techniques for deploying lightweight NLP models in resource-constrained environments, focusing on maintaining high accuracy while significantly reducing computational overhead and energy consumption.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience section">
+        <div class="container">
+            <h2 class="section-title reveal">Experience</h2>
+            <div class="experience-timeline">
+                <div class="experience-item reveal">
+                    <div class="experience-content">
+                        <h3>Open Source Contributor</h3>
+                        <h4>GirlScript Summer of Code 2025</h4>
+                        <p>Contributing to impactful open source projects, collaborating with developers worldwide, and mentoring newcomers in the tech community while building innovative solutions.</p>
+                    </div>
+                    <div class="experience-dot"></div>
+                </div>
+                <div class="experience-item reveal">
+                    <div class="experience-content">
+                        <h3>ML Coursework Participant</h3>
+                        <h4>Amazon ML Summer School 2024</h4>
+                        <p>Completed intensive machine learning coursework covering advanced algorithms, deep learning, neural networks, and practical applications in industry-scale environments.</p>
+                    </div>
+                    <div class="experience-dot"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section class="leadership section">
+        <div class="container">
+            <h2 class="section-title reveal">Leadership & Activities</h2>
+            <div class="leadership-grid">
+                <div class="leadership-card reveal">
+                    <div class="leadership-icon">🏆</div>
+                    <h3>Smart India Hackathon</h3>
+                    <p>Participated in India's largest hackathon, developing innovative solutions for real-world problems and collaborating with diverse teams nationwide.</p>
+                </div>
+                <div class="leadership-card reveal">
+                    <div class="leadership-icon">👥</div>
+                    <h3>Student Coordinator</h3>
+                    <p>Leading student initiatives, organizing tech events and workshops, and fostering collaborative learning environments within the university community.</p>
+                </div>
+                <div class="leadership-card reveal">
+                    <div class="leadership-icon">❤️</div>
+                    <h3>Community Volunteer</h3>
+                    <p>Active volunteer in community service projects, promoting technology education, digital literacy, and empowering underrepresented groups in tech.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section">
+        <div class="container">
+            <h2 class="section-title reveal">Let's Create Something Beautiful</h2>
+            <div class="contact-content">
+                <form class="contact-form reveal">
+                    <div class="form-group">
+                        <input type="text" class="form-input" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-input" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-input" rows="5" placeholder="Tell me about your project or collaboration idea..." required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </div>
+                </form>
+                <div class="social-links reveal">
+                    <a href="mailto:riya.verma@example.com" class="social-link">
+                        <div class="social-icon">✉️</div>
+                        <span>riya.verma@example.com</span>
+                    </a>
+                    <a href="#" class="social-link">
+                        <div class="social-icon">💼</div>
+                        <span>LinkedIn Profile</span>
+                    </a>
+                    <a href="#" class="social-link">
+                        <div class="social-icon">💻</div>
+                        <span>GitHub Repository</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
