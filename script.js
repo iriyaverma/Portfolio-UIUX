@@ -530,4 +530,34 @@ window.addEventListener('resize', () => {
     const starsContainer = document.querySelector('.stars-container');
     starsContainer.innerHTML = '';
     createStars();
-});
+})
+/*-------------here-------------------*/
+    
+    function sendDirectEmail() {
+    const name = document.getElementById('contact-name').value;
+    const email = document.getElementById('contact-email').value;
+    const message = document.getElementById('contact-message').value;
+    
+    if (!name || !email || !message) {
+        alert('Please fill in all fields');
+        return;
+    }
+    
+    const subject = `Portfolio Contact from ${name}`;
+    const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
+    const mailtoLink = `mailto:riyav.1103@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+    window.open(mailtoLink);
+    
+    // Visual feedback
+    const button = document.querySelector('.submit-btn');
+    const originalText = button.textContent;
+    button.textContent = 'Email Client Opened!';
+    
+    setTimeout(() => {
+        button.textContent = originalText;
+        document.getElementById('contact-name').value = '';
+        document.getElementById('contact-email').value = '';
+        document.getElementById('contact-message').value = '';
+    }, 2000);
+};
